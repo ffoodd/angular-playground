@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "module": "es2022",
+    "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2022",
@@ -31,6 +31,8 @@
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "flatModuleOutfile": "angular-playground.mjs",
+    "flatModuleId": "angular-playground"
   }
 }
