@@ -19,5 +19,6 @@ import { Component } from '@angular/core';
         transition: fill 0.2s ease-out;
     }
     `],
+    standalone: false,
 })
 export class LogoComponent {}

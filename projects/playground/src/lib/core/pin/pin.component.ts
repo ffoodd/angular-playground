@@ -18,6 +18,7 @@ import { Component, Input } from '@angular/core';
         opacity: 1;
     }
     `],
+    standalone: false,
 })
 export class PinComponent {
     @Input() selected: boolean;

@@ -21,8 +21,8 @@ import { Sandboxes } from "../shared/sandboxes";
 
 @Component({
     selector: 'ap-scenario',
-    template: `
-        <ng-template></ng-template>`,
+    template: `<ng-template></ng-template>`,
+    standalone: false,
 })
 export class ScenarioComponent implements OnInit, OnChanges, OnDestroy {
     /**

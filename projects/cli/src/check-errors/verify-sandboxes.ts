@@ -40,7 +40,7 @@ async function main(config: Config) {
     const hostUrl = `http://localhost:${config.angularCliPort}`;
     const timeoutAttempts = config.timeout;
     browser = await puppeteer.launch({
-        headless: 'new',
+        headless: true,
         handleSIGINT: false,
         args: CHROME_ARGS,
     });
