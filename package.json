@@ -2,6 +2,7 @@
   "name": "angular-playground",
   "version": "11.0.0",
   "description": "A drop in app module for working on Angular components in isolation (aka Scenario Driven Development).",
+  "type": "module",
   "module": "dist/playground/fesm2022/angular-playground.mjs",
   "es2022": "dist/playground/fesm2022/angular-playground.mjs",
   "fesm2022": "dist/playground/fesm2022/angular-playground.mjs",
