@@ -1,8 +1,8 @@
 import { writeFileSync } from 'fs';
-import { ScenarioSummary } from './check-errors/verify-sandboxes';
-import { JSONReporter } from './check-errors/reporters/json-reporter';
-import { XMLReporter } from './check-errors/reporters/xml-reporter';
-const chalk = require('chalk');
+import { ScenarioSummary } from './check-errors/verify-sandboxes.js';
+import { JSONReporter } from './check-errors/reporters/json-reporter.js';
+import { XMLReporter } from './check-errors/reporters/xml-reporter.js';
+import chalk from 'chalk';
 
 export const REPORT_TYPE = {
     LOG: 'log',

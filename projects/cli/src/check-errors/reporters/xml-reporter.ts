@@ -1,5 +1,5 @@
-import { ErrorReport, Reporter } from '../../error-reporter';
-import { ScenarioSummary } from '../verify-sandboxes';
+import { ErrorReport, Reporter } from '../../error-reporter.js';
+import { ScenarioSummary } from '../verify-sandboxes.js';
 
 export class XMLReporter implements Reporter {
     constructor (

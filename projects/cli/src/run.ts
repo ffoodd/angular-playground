@@ -1,11 +1,11 @@
 import * as getPort from 'get-port';
-import { configure, Config } from './configure';
-import { buildSandboxes } from './build-sandboxes';
-import { startWatch } from './start-watch';
-import { verifySandboxes } from './check-errors/verify-sandboxes';
-import { serveAngularCli } from './serve-angular-cli';
-import { buildAngularCli } from './build-angular-cli';
-import { checkSnapshots } from './check-snapshots';
+import { configure, Config } from './configure.js';
+import { buildSandboxes } from './build-sandboxes.js';
+import { startWatch } from './start-watch.js';
+import { verifySandboxes } from './check-errors/verify-sandboxes.js';
+import { serveAngularCli } from './serve-angular-cli.js';
+import { buildAngularCli } from './build-angular-cli.js';
+import { checkSnapshots } from './check-snapshots.js';
 
 export async function run() {
     const config: Config = configure(process.argv);

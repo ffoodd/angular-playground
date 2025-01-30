@@ -1,4 +1,4 @@
-import { Reporter } from '../../error-reporter';
+import { Reporter } from '../../error-reporter.js';
 
 class JSONStats {
     suites = 1;

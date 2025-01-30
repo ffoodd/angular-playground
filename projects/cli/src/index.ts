@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { run } from './run';
-const chalk = require('chalk');
+import { run } from './run.js';
+import chalk from 'chalk';
 
 (async () => {
     try {

@@ -1,7 +1,7 @@
 import { writeFile, readFileSync, existsSync, writeFileSync, mkdirSync } from 'fs';
 import { join as joinPath, resolve as resolvePath } from 'path';
-import { fromDirMultiple } from './from-dir';
-import { StringBuilder } from './string-builder';
+import { fromDirMultiple } from './from-dir.js';
+import { StringBuilder } from './string-builder.js';
 
 export const SANDBOX_MENU_ITEMS_FILE = resolvePath(__dirname, './sandbox-menu-items.js');
 

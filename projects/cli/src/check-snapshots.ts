@@ -3,9 +3,9 @@ import * as puppeteer from 'puppeteer';
 import { resolve as resolvePath, isAbsolute } from 'path';
 import { runCLI } from '@jest/core';
 import { Config as JestConfig } from '@jest/types';
-import { SANDBOX_MENU_ITEMS_FILE, SandboxFileInformation } from './build-sandboxes';
-import { Config } from './configure';
-import { waitForNgServe } from './utils';
+import { SANDBOX_MENU_ITEMS_FILE, SandboxFileInformation } from './build-sandboxes.js';
+import { Config } from './configure.js';
+import { waitForNgServe } from './utils.js';
 
 export interface ViewportOptions {
   width: number;
@@ -145,7 +145,7 @@ function writeSandboxesToTestFile(config: Config, hostUrl: string, testPath: str
         const result = `
           // imports
           const puppeteer = require('puppeteer');
-          const chalk = require('chalk');
+          import chalk from 'chalk';
           const { toMatchImageSnapshot } = require('jest-image-snapshot');
           // declarations
           let browser;

@@ -1,11 +1,11 @@
 import * as puppeteer from 'puppeteer';
 import { ConsoleMessage, Page } from 'puppeteer';
-import { SANDBOX_MENU_ITEMS_FILE, SandboxFileInformation } from '../build-sandboxes';
-import { ErrorReporter, REPORT_TYPE } from '../error-reporter';
-import { Config } from '../configure';
-import { waitForNgServe } from '../utils';
+import { SANDBOX_MENU_ITEMS_FILE, SandboxFileInformation } from '../build-sandboxes.js';
+import { ErrorReporter, REPORT_TYPE } from '../error-reporter.js';
+import { Config } from '../configure.js';
+import { waitForNgServe } from '../utils.js';
 
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 // Used to tailor the version of headless chromium ran by puppeteer
 const CHROME_ARGS = ['--disable-gpu', '--no-sandbox'];

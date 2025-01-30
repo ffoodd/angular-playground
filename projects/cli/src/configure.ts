@@ -1,8 +1,8 @@
 import { Command } from 'commander';
 import { resolve as resolvePath } from 'path';
 import { existsSync } from 'fs';
-import { REPORT_TYPE } from './error-reporter';
-import { ViewportOptions } from './check-snapshots';
+import { REPORT_TYPE } from './error-reporter.js';
+import { ViewportOptions } from './check-snapshots.js';
 
 export interface Config {
     sourceRoots: string[];
