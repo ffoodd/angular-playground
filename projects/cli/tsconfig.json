@@ -2,13 +2,13 @@
   "compilerOptions": {
     "baseUrl": "",
     "declaration": false,
-    "lib": ["es6", "dom"],
-    "module": "commonjs",
+    "lib": ["es2022", "dom"],
+    "module": "esnext",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "outDir": "../../dist/bin",
     "sourceMap": false,
-    "target": "es2015",
+    "target": "es2022",
     "newLine": "LF",
     "typeRoots": [
       "../../node_modules/@types"

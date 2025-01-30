@@ -2,6 +2,7 @@ import { Directive, Input, ElementRef } from '@angular/core';
 
 @Directive({
     selector: '[apFocus]',
+    standalone: false
 })
 export class FocusDirective {
     @Input() set apFocus(value: any) {

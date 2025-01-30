@@ -1,6 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({ name: 'apHighlightSearchMatch', pure: false })
+@Pipe({
+    name: 'apHighlightSearchMatch', pure: false,
+    standalone: false
+})
 export class HighlightSearchMatchPipe implements PipeTransform {
     transform(value: string, indexMatches: number[], offset = 0): any {
         // Match null and undefined, but not 0 or ''
